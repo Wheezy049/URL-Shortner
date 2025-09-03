@@ -84,20 +84,5 @@ npm start     # for production
 - No frontend framework is required for testing.
 
 
-## 📝 Folder Structure
-
-url-shortener/
-├── server.js            # Main entry point
-├── routes/
-│   └── url.js           # API routes
-├── controllers/
-│   └── urlController.js # Business logic
-├── models/
-│   └── Url.js           # MongoDB schema
-├── public/
-│   └── index.html       # Simple HTML form for testing
-└── package.json
-
-
 ✍️ Author
 Dev_faruq
