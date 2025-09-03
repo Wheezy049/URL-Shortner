@@ -1,12 +1,15 @@
 const express = require("express");
-const { shortenUrl, redirectShortenUrl } = require("../controller/urlController");
+const {
+  shortenUrl,
+  redirectShortenUrl,
+} = require("../controller/urlController");
 
-const urlRouter = express.Router()
+const urlRouter = express.Router();
 
 // shorten url
-urlRouter.post('/shorten', shortenUrl)
+urlRouter.post("/shorten", shortenUrl);
 
 // redirect url
-urlRouter.get("/:shortenId", redirectShortenUrl)
+urlRouter.get("/:shortenId", redirectShortenUrl);
 
 module.exports = urlRouter;
