@@ -20,8 +20,9 @@ async function shortenUrl(req, res) {
 
     await newUrl.save();
 
+    const baseUrl = process.env.BASE_URL || "http://localhost:8000";
     res.json({
-      shortenUrl: `http://localhost:8000/api/url/${shortenId}`,
+      shortenUrl: `${baseUrl}/api/url/${shortenId}`,
       originalUrl,
     });
   } catch (error) {
